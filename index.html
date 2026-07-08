@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasminath — Gestionnaire RH &amp; Développeuse Web</title>
+  <meta name="description" content="Portfolio de Yasminath, Gestionnaire Administrative du Personnel et développeuse web en formation, basée à Porto-Novo, Bénin.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#accueil" class="logo">Yasminath LALEYE<span>.</span></a>
+      <nav aria-label="Navigation principale">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="burger"></span>
+        </button>
+        <ul id="primaryMenu" class="nav-menu">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Je suis Yasminath,<br>Gestionnaire RH &amp; Développeuse Web en devenir.</h1>
+          <p class="hero-sub">Je combine trois ans d'expérience en gestion administrative du personnel avec une formation active en développement web, pour construire des outils et des sites au service des équipes RH.</p>
+          <div class="hero-cta">
+            <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-outline">Me contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos" class="section apropos">
+      <div class="container">
+        <h2>À propos</h2>
+        <div class="apropos-grid">
+          <div class="apropos-text">
+            <p>
+              Basée à Porto-Novo, au Bénin, je suis Gestionnaire Administrative du Personnel 
+               depuis environ trois ans. J'y gère les dossiers du
+              personnel, les procédures administratives RH et l'application du droit du travail béninois.
+              En parallèle, je suis une formation en développement web (session mai 2026) afin de
+              construire des outils numériques adaptés aux besoins RH : sites vitrines, tableaux de bord,
+              calculateurs internes.
+            </p>
+            <p>
+              Mon objectif professionnel est de faire le pont entre l'administration RH et la technique,
+              en apportant des solutions web simples et efficaces aux problématiques de gestion du personnel.
+            </p>
+          </div>
+          <div class="apropos-photo">
+            <img
+              src="images/portrait-yasminath.jpeg"
+              alt="Portrait de Yasminath"
+              class="apropos-photo-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="apropos-photo-placeholder">
+              <span>Photo<br><small>images/portrait-yasminath.jpg</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--COMPETENCES -->
+    <section id="competences" class="section competences">
+      <div class="container">
+        <h2>Mes compétences</h2>
+        <div class="competences-grid">
+          <div class="comp-block">
+            <h3>Ressources Humaines</h3>
+            <ul class="skill-list">
+              <li><span>Gestion administrative du personnel</span><span class="skill-bar"><i style="width:90%"></i></span></li>
+              <li><span>Droit du travail béninois</span><span class="skill-bar"><i style="width:80%"></i></span></li>
+              <li><span>Paie (SIRH, bulletins, déclarations)</span><span class="skill-bar"><i style="width:85%"></i></span></li>
+              <li><span>Rédaction de documents RH</span><span class="skill-bar"><i style="width:85%"></i></span></li>
+            </ul>
+          </div>
+          <div class="comp-block">
+            <h3>Développement Web</h3>
+            <ul class="skill-list">
+              <li><span>HTML5 sémantique</span><span class="skill-bar"><i style="width:85%"></i></span></li>
+              <li><span>CSS3 (Flexbox / Grid)</span><span class="skill-bar"><i style="width:70%"></i></span></li>
+              <li><span>JavaScript (bases)</span><span class="skill-bar"><i style="width:60%"></i></span></li>
+              <li><span>Figma (wireframe / prototype)</span><span class="skill-bar"><i style="width:45%"></i></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS (aperçu) -->
+    <section id="projets" class="section projets">
+      <div class="container">
+        <h2>Mes projets</h2>
+
+        <div class="projets-grid">
+          <article class="projet-card projet-card--rh">
+            <span class="badge badge-rh">RH</span>
+            <h3>Trame d'entretien annuel</h3>
+            <p>Création d'un support d'entretien structuré pour harmoniser les pratiques managériales au sein d'une équipe pluridisciplinaire.</p>
+            <div class="projet-tags">
+              <span>Modèle</span><span>Management</span><span>RH</span>
+            </div>
+          </article>
+
+          <article class="projet-card projet-card--dev">
+            <span class="badge badge-dev">Dev</span>
+            <h3>Page portfolio responsive</h3>
+            <p>Ce site, justement : pensé mobile-first, sans framework, pour bien comprendre chaque ligne de code écrite.</p>
+            <div class="projet-tags">
+              <span>Responsive</span><span>CSS Grid</span><span>Accessibilité</span>
+            </div>
+          </article>
+
+          <article class="projet-card projet-card--rh">
+            <span class="badge badge-rh">RH</span>
+            <h3>Refonte du processus d'intégration</h3>
+            <p>Conception d'un parcours d'onboarding clair pour les nouveaux collaborateurs : checklist, documents type, suivi à 30 jours.</p>
+            <div class="projet-tags">
+              <span>SIRH</span><span>Process</span><span>Documentation</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projets-more">
+          <a href="projets.html" class="btn btn-outline">Voir tous mes projets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Vous avez un projet en tête ?</h2>
+        <p class="contact-sub">N'hésitez pas à me contacter.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" required minlength="2" autocomplete="name">
+              <span class="error-msg" id="err-nom" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="error-msg" id="err-email" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            <span class="error-msg" id="err-message" role="alert"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <p id="formFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Yasminath — Porto-Novo, Bénin.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

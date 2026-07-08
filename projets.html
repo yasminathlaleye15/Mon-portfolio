@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Yasminath | Gestionnaire RH &amp; Développeuse Web</title>
+  <meta name="description" content="Tous les projets de Yasminath : réalisations RH (entretiens, onboarding, process) et projets de développement web (portfolio, calculateur, prototypage).">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Yasminath<span>.</span></a>
+      <nav aria-label="Navigation principale">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="burger"></span>
+        </button>
+        <ul id="primaryMenu" class="nav-menu">
+          <li><a href="index.html#accueil">Accueil</a></li>
+          <li><a href="index.html#apropos">À propos</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="projets.html" class="is-active">Projets</a></li>
+          <li><a href="index.html#contact" class="btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> / Projets</p>
+        <h1>Mes projets</h1>
+        <p class="hero-sub">Un aperçu concret de mon double profil : des réalisations côté <strong>Ressources Humaines</strong> (outils et process pour les équipes) et côté <strong>développement web</strong> (sites, interfaces, logique applicative).</p>
+
+        <div class="filters" role="group" aria-label="Filtrer les projets par catégorie">
+          <button type="button" class="filter-btn is-active" data-filter="tous">Tous les projets</button>
+          <button type="button" class="filter-btn" data-filter="rh">RH</button>
+          <button type="button" class="filter-btn" data-filter="dev">Développement</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="projets-full">
+      <div class="container">
+        <div class="projets-grid">
+
+          <article class="projet-card projet-card--rh">
+            <span class="badge badge-rh">RH</span>
+            <h3>Trame d'entretien annuel</h3>
+            <p>Création d'un support d'entretien structuré pour harmoniser les pratiques managériales au sein d'une équipe pluridisciplinaire.</p>
+            <div class="projet-tags">
+              <span>Modèle</span><span>Management</span><span>RH</span>
+            </div>
+          </article>
+
+          <article class="projet-card projet-card--rh">
+            <span class="badge badge-rh">RH</span>
+            <h3>Refonte du processus d'intégration</h3>
+            <p>Conception d'un parcours d'onboarding clair pour les nouveaux collaborateurs : checklist, documents type, suivi à 30 jours.</p>
+            <div class="projet-tags">
+              <span>SIRH</span><span>Process</span><span>Documentation</span>
+            </div>
+          </article>
+
+          <article class="projet-card projet-card--dev">
+            <span class="badge badge-dev">Dev</span>
+            <h3>Page portfolio responsive</h3>
+            <p>Ce site, justement : pensé mobile-first, sans framework, pour bien comprendre chaque ligne de code écrite.</p>
+            <div class="projet-tags">
+              <span>Responsive</span><span>CSS Grid</span><span>Accessibilité</span>
+            </div>
+          </article>
+
+          <article class="projet-card projet-card--dev">
+            <span class="badge badge-dev">Dev</span>
+            <h3>Calculateur de prêt</h3>
+            <p>Petite application JavaScript calculant une mensualité de prêt à partir du montant, du taux et de la durée saisis par l'utilisateur.</p>
+            <div class="projet-tags">
+              <span>JavaScript</span><span>Logique</span><span>Formulaire</span>
+            </div>
+          </article>
+
+          <article class="projet-card projet-card--dev">
+            <span class="badge badge-dev">Dev</span>
+            <h3>Wireframe &amp; prototype Figma</h3>
+            <p>Maquette basse puis moyenne fidélité d'un portfolio, avec système de couleurs et typographie définis (desktop et mobile).</p>
+            <div class="projet-tags">
+              <span>Figma</span><span>UI</span><span>Prototypage</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projets-empty">Aucun projet ne correspond à ce filtre pour le moment.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Yasminath — Porto-Novo, Bénin.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
