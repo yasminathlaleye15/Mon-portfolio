@@ -516,3 +516,30 @@ nav[aria-label="Navigation principale"]{
   color: var(--ink-soft);
   font-size: 0.85rem;
 }
+/* =========================================================
+   Responsive — 2 breakpoints minimum
+   ========================================================= */
+
+/* Tablette */
+@media (max-width: 768px) {
+  .competences-grid { grid-template-columns: 1fr; }
+  .projets-grid { grid-template-columns: 1fr 1fr; }
+  .hero-text h1 { font-size: 1.9rem; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nav-toggle { display: block; }
+  .nav-menu {
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; background: var(--navy);
+    display: none; padding: 1rem 20px; gap: 1rem;
+  }
+  .nav-menu.open { display: flex; }
+  .header-inner { position: relative; }
+  .projets-grid { grid-template-columns: 1fr; }
+  .form-row { flex-direction: column; }
+  .hero { padding: 60px 0; }
+  .hero-text h1 { font-size: 1.6rem; }
+  .section { padding: 50px 0; }
+}
